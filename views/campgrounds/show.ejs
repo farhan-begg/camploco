@@ -8,6 +8,8 @@
 <body>
   <h1><%= campground.title %></h1>
   <h2><%= campground.location %></h2>
+  <img src="<%= campground.image %>" alt="Campground Image" style="width: 300px; height: 200px;">
+  <p><%= campground.description %></p>
 
   <p>
     <form action="/campgrounds/<%=campground._id%>?_method=DELETE" method="POST">
