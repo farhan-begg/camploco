@@ -1,8 +1,9 @@
 <% layout('/layouts/boilerplate') %>
   <h1>All Campgrounds</h1>
-  <div>
-    <a href="/campgrounds/new">Add New Campground</a>
-  </div>
+<div class="mt-3 mb-3">
+  <button class="btn btn-outline-primary" onclick="window.location.href='/campgrounds/new'">Add New Campground</button>
+</div>
+
 
     <% for (let campground of campgrounds) { %>
       <div class="card " style="margin-bottom: 20px;">
